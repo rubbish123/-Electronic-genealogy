@@ -213,7 +213,7 @@
                              FontFamily="/Project Z UI;component/Fonts/#PingFang SC Bold" Margin="65,0,65.8,0"
                              
                              >
-                        <WrapPanel Height="45" Width="104" Margin=" -2 0 0 0"  >
+                        <WrapPanel Height="45" Width="104" Margin=" -2 0 0 0" MouseDown="clickToAddPage"  >
                             <Image Margin=" 0 -5 0 0"
                                  Source="pack://application:,,,/Resorces\Button 人员管理.png" Height="34" Width="36"
                                 />
