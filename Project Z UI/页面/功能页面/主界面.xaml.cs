@@ -84,6 +84,13 @@ namespace Project_Z_UI.页面
         {
 
         }
+        
+        private void clickToAddPage(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            功能页面.Window1 addUserPage = new 功能页面.Window1();
+            addUserPage.Show();
+            this.Close();
+        }
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
