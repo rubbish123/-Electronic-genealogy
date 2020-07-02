@@ -1,0 +1,50 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="377.744" Width="641.311">
+    <Grid HorizontalAlignment="Left" Width="633">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="67*"/>
+            <RowDefinition Height="26*"/>
+            <RowDefinition Height="23*"/>
+        </Grid.RowDefinitions>
+        <Button Grid.Row="2" Content="修改" HorizontalAlignment="Right" Width="75" Margin="0,18,216,27" Click="Button_Click"/>
+        <Button Grid.Row="2" Content="查询" HorizontalAlignment="Right" Width="75" Margin="0,18,352,27" Click="Button_Click_1" />
+
+        <WrapPanel Grid.Row="1" Orientation="Horizontal" Margin="-10,0,10,0" DataContext="{Binding ElementName=listView1,Path=SelectedItem}">
+
+            <StackPanel Orientation="Horizontal" Margin="5,2,5,2">
+                <TextBlock Name="textBlock_族谱名称" Text="族谱名称:" />
+                <TextBox Name="textBox_族谱名称" MinWidth="100" Text="{Binding 族谱名称}"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="5,2,5,2">
+                <TextBlock Name="textBlock_族谱编号" Text="族谱编号:" />
+                <TextBox Name="textBox_族谱编号" MinWidth="100" Text="{Binding 族谱编号}"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="5,2,5,2">
+                <TextBlock Name="textBlock_族谱简介" Text="族谱简介:" />
+                <TextBox Name="textBox_族谱简介" MinWidth="100" Text="{Binding 族谱简介}"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="5,2,5,2">
+                <TextBlock Name="textBlock_族谱代数" Text="族谱代数:" />
+                <TextBox Name="textBox_族谱代数" MinWidth="100" Text="{Binding 族谱代数}"/>
+            </StackPanel>
+
+        </WrapPanel>
+        <ListView Grid.Row="0" Name="listView1" MinWidth="280">
+            <ListView.View>
+                <GridView  x:Name="gridView1">
+                    <GridViewColumn Header="族谱名称" DisplayMemberBinding="{Binding Path=族谱名称}"></GridViewColumn>
+                    <GridViewColumn Header="族谱编号" DisplayMemberBinding="{Binding Path=族谱编号}"></GridViewColumn>
+                    <GridViewColumn Header="族谱简介" DisplayMemberBinding="{Binding Path=族谱简介}"></GridViewColumn>
+                    <GridViewColumn Header="族谱代数" DisplayMemberBinding="{Binding Path=族谱代数}"></GridViewColumn>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+    </Grid>
+</Window>
