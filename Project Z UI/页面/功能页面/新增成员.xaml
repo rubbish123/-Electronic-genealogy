@@ -321,7 +321,29 @@
         </Grid>
 
         <!-- 主区内容-->
-        <Grid Grid.Row=" 1 " Grid.Column=" 1"  />
+        <Grid Grid.Row=" 1 " Grid.Column=" 1" Margin="0,0.4,-0.4,0.4">
+            <TextBlock HorizontalAlignment="Left" Margin="81,53,0,0" TextWrapping="Wrap" Text="编号" VerticalAlignment="Top" Height="30" FontSize="20"/>
+            <TextBox x:Name="idTextbox" HorizontalAlignment="Left" Margin="148,50,490,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="180" TextChanged="TextBox_TextChanged" FontSize="18"/>
+            <TextBlock HorizontalAlignment="Left" Margin="81,143,0,0" TextWrapping="Wrap" Text="年龄" VerticalAlignment="Top" Height="30" FontSize="20"/>
+            <TextBox x:Name="ageTextbox" HorizontalAlignment="Left" Margin="148,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="180" TextChanged="TextBox_TextChanged" FontSize="18"/>
+            <TextBlock HorizontalAlignment="Left" Margin="46,233,0,0" TextWrapping="Wrap" Text="出生日期" VerticalAlignment="Top" Height="30" FontSize="20"/>
+            <TextBox x:Name="birthTextbox" HorizontalAlignment="Left" Margin="148,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="180" TextChanged="TextBox_TextChanged" FontSize="18"/>
+            <TextBlock HorizontalAlignment="Left" Margin="46,323,0,0" TextWrapping="Wrap" Text="父亲编号" VerticalAlignment="Top" Height="30" FontSize="20"/>
+            <TextBox x:Name="fidTextbox" HorizontalAlignment="Left" Margin="148,320,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="180" TextChanged="TextBox_TextChanged" FontSize="18"/>
+            <TextBlock HorizontalAlignment="Left" Margin="81,403,0,0" TextWrapping="Wrap" Text="密码" VerticalAlignment="Top" Height="30" FontSize="20"/>
+            <TextBox x:Name="passTextbox" HorizontalAlignment="Left" Margin="148,400,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="180" TextChanged="TextBox_TextChanged" FontSize="18"/>
 
+
+            <TextBlock HorizontalAlignment="Left" Margin="440,53,0,0" TextWrapping="Wrap" Text="姓名" VerticalAlignment="Top" Height="30" FontSize="20"/>
+            <TextBox x:Name="nameTextbox" HorizontalAlignment="Left" Margin="507,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="180" TextChanged="TextBox_TextChanged" FontSize="18"/>
+            <TextBlock HorizontalAlignment="Left" Margin="440,143,0,0" TextWrapping="Wrap" Text="性别" VerticalAlignment="Top" Height="30" FontSize="20"/>
+            <TextBox x:Name="genderTextbox" HorizontalAlignment="Left" Margin="507,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="180" TextChanged="TextBox_TextChanged" FontSize="18"/>
+            <TextBlock HorizontalAlignment="Left" Margin="440,233,0,0" TextWrapping="Wrap" Text="代数" VerticalAlignment="Top" Height="30" FontSize="20"/>
+            <TextBox x:Name="daiTextbox" HorizontalAlignment="Left" Margin="507,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="180" TextChanged="TextBox_TextChanged" FontSize="18"/>
+            <TextBlock HorizontalAlignment="Left" Margin="425,323,0,0" TextWrapping="Wrap" Text="管理员" VerticalAlignment="Top" Height="30" FontSize="20"/>
+            <TextBox x:Name="isAdminTextbox" HorizontalAlignment="Left" Margin="507,320,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="180" TextChanged="TextBox_TextChanged" FontSize="18"/>
+            <Button Content="提交" HorizontalAlignment="Left" Margin="545,388,0,0" VerticalAlignment="Top" Height="45" Width="100" RenderTransformOrigin="-0.049,0.406" Click="Button_Click_1"/>
+
+        </Grid>
     </Grid>
 </Window>
